@@ -1,0 +1,189 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Risk to Individual
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+ {# <a class="govuk-back-link" href="/docs/pages/previousConvictions">Back</a> #}
+
+  {# <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> #}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column govuk-!-margin-top-6">
+      <h1 class="govuk-heading-xl">CRC allocation risk screening</h1>  
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+  <p class="govuk-hint">Sections</p> 
+    <ul class="govuk-list">
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Offender Details</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Previous Convictions</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Significant events</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to children</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to individual</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Other risks</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">sources of information</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Follow-ups</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
+    </ul>
+</div>
+  <div class="govuk-grid-column-two-thirds">
+
+<p class="govuk-heading-l">Risk to individual</p> 
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+     <span id="changed-name-hint" class="govuk-hint">
+      Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up.  
+    </span>
+      <h1 class="govuk-heading-m">
+        Is there a risk of suicide?
+      </h1>
+    </legend>
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          No
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Dont Know
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-heading-m">
+        Is there a risk of self harm?  
+      </h1>
+    </legend>
+    
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          No
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Dont Know
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-heading-m">
+        Is there a risk that the offender might not be able to cope in a custody or hostel setting?  
+      </h1>
+    </legend>
+    
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          No
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Dont Know
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-heading-m">
+        Is the offender a vunerable person?  
+      </h1>
+    </legend>
+    
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name-1">
+          No
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Dont Know
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+ 
+</div></div>
+
+  <a href="/docs/pages/" role="button" role="button" style= "position: relative; left: 550px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Next</a>
+  <a href="/docs/pages/start" role="button" style= "position: relative; left: 560px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Save and Close</a>
+
+
+</div>
+{% endblock %}
