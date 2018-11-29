@@ -11,7 +11,7 @@
 
 {% block beforeContent %}
 
- {# <a class="govuk-back-link" href="/docs/pages/previousConvictions">Back</a> #}
+ <a class="govuk-back-link" href="/docs/pages/previousConvictions">Back</a>
 
   {# <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
@@ -36,122 +36,166 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
-  <p class="govuk-hint">Sections</p> 
-    <ul class="govuk-list">
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Offender Details</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Previous Convictions</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Significant events</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to children</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to individual</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Other risks</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">sources of information</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Follow-ups</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
-    </ul>
-</div>
+      <p class="govuk-hint">Sections</p> 
+        <ul class="govuk-list">
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Offender Details</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Previous Convictions</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="#">Significant events</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to children</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to individual</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Other risks</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sources of information</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Follow-ups</a></li>
+          <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
+        </ul>
+  </div>
   <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-heading-l">Has the offender ever displayed any of the below behaviours, and do they have an assessment and sentencing history</h1>
+          </legend>
+          <span id="waste-hint" class="govuk-hint">Select all that apply, or leave blank and go to the next if none applies.</span>
+      
+        <h2 class="govuk-heading-m govuk-!-margin-top-4">Actions and behaviours</h2> 
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-      <h1 class="govuk-heading-l">
-        Has the offender ever been convicted of the following offences?
-      </h1>
-    </legend>
-    <span id="waste-hint" class="govuk-hint">
-      Select all that apply, or leave blank and go to the next if none applies.
-    </span>
-  
-  <p class="govuk-heading-m govuk-!-margin-top-4">Sections</p> 
+        <div class="govuk-checkboxes">
 
-    <div class="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-          Murder/ attempted murder / threat or conspiracy to murder /manslaughter
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-          Wounding / GBH
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Any sexual offence against a child
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Aggrivated burglary
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Arson
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Criminal damage with the intent to endanger life
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          kidnapping / false imprisonment
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Possession of a firearm with intent to endanger life or resist arrest
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Racially motivated / Racially aggrivated offence
-        </label>
-      </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              Assaulted or threatened others
+            </label>
+          </div>
 
- <p class="govuk-heading-m govuk-!-margin-top-4">Sections</p> 
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+              Been violent towards partner or another member of their family
+            </label>
+          </div>
 
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Robbery
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Any offence involving possession and/or use of weapons
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Any other offence which is as serious (please specify)
-        </label>
-      </div>
-    </div>
-  </fieldset>
-</div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              Assaulted or threatened staff
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              Commmitted an offence involving excessive use of violence of sadistic violence
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              Been involved in hate-based behaviour
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              Displayed obsessive behaviour linked to offending
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              Been a stalker
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              Commmitted a serious offence whislt not on medication
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              Been involved in bizarre or ritualistic aspects linked to offending 
+            </label>
+          </div>
+
+          <h2 class="govuk-heading-m govuk-!-margin-top-4">Actions and behaviours whislt in custody</h2> 
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Displayed any innapropriate behaviour towards members of staff, visitors or prisoners
+              </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Displayed any offence-related behaviour
+              </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Established links or associations which increase risk of serious harm
+              </label>
+            </div>
+          </div>
+
+          <h2 class="govuk-heading-m govuk-!-margin-top-4">Assessment and sentencing history</h2> 
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Been sentenced to four years imprisonment or more
+              </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Been assessed as high risk of serious harm on a previous occasion 
+              </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Been, or is subject to, life sentence/license, or detained at her Majesty's pleasure, or ever received sentence of imprisonment for public protection (S.225 CJA 2003) or a sentence of detention for life of detention for public protection (S.226 CJA 2003)
+              </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Received an extended sentence
+              </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Been a conditionally discharged patient subject to a restriction order under Section 41 MHA 1983
+              </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Been a minor subject to life license under s90-92 of the powers of Criminal Courts (Sentencing) Act
+              </label>
+          </div>
+        </fieldset>
   </div>
 
-
-</div></div>
-
+</div>
   <a href="/docs/pages/RiskToChildren" role="button" role="button" style= "position: relative; left: 550px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Next</a>
   <a href="/docs/pages/start" role="button" style= "position: relative; left: 560px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Save and Close</a>
-
-</div>
-
 </div>
 {% endblock %}

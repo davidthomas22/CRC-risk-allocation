@@ -11,7 +11,7 @@
 
 {% block beforeContent %}
 
- {# <a class="govuk-back-link" href="/docs/pages/start">Back</a> #}
+ <a class="govuk-back-link" href="/docs/pages/start">Back</a>
 
   {# <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
@@ -36,19 +36,20 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
-  <p class="govuk-hint">Sections</p> 
+    <p class="govuk-hint">Sections</p> 
     <ul class="govuk-list">
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Offender Details</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="#">Offender Details</a></li>
       <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousConvictions">Previous Convictions</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Significant events</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to children</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to individual</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Other risks</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">sources of information</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Follow-ups</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousBehaviours">Significant events</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToChildren">Risk to children</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToIndividual">Risk to individual</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/OtherRisks">Other risks</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/">Sources of information</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/">Follow-ups</a></li>
+      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/">Sign and submit</a></li>
     </ul>
-</div>
+  </div>
+
   <div class="govuk-grid-column-one-third">
     <ul style= "font-weight: bold" class="govuk-list">
       <li>Name:</li>
@@ -61,20 +62,19 @@
   </div>
 
   <div class="govuk-grid-column-one-third">
-    <ul class="govuk-list">
-      <li>Joe Bloggs</li>
-      <li>11/11/1998</li>
-      <li>12345678</li>
-      <li>87654321</li>
-      <li>Male</li>
-      <li>14/11/2018</li>
-    </ul>
+      <ul class="govuk-list">
+        <li>Joe Bloggs</li>
+        <li>11/11/1998</li>
+        <li>12345678</li>
+        <li>87654321</li>
+        <li>Male</li>
+        <li>14/11/2018</li>
+      </ul>
+  </div>
 </div>
 
-</div></div>
-
+<div>
   <a href="/docs/pages/previousConvictions" role="button" role="button" style= "position: relative; left: 550px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Next</a>
   <a href="/docs/pages/start" role="button" style= "position: relative; left: 560px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Cancel</a>
-
 </div>
 {% endblock %}
