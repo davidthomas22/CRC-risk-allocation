@@ -48,28 +48,6 @@
   }
 }
 
-.govuk-oasys-list {
-  display: block;
-  padding: 8px 30px 8px 10px;
-  text-decoration: none;
-}
-
-.govuk-oasys-list:hover {
-  display: block;
-  padding: 8px 30px 8px 10px;
-  border-left-color: #005ea5;
-  border-left: 4px solid;
-  text-decoration: none;
-}
-
-.govuk-oasys-current-page {
-  border-left-color: #005ea5;
-  border-left: 4px solid;
-  background: #f8f8f8;
-  font-weight: bold;
-}
-
-
 .govuk-link:focus, .app-prose-scope a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
