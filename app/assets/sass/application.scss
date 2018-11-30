@@ -14,3 +14,23 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+.govuk-oasys-list {
+    display: block;
+    padding: 8px 30px 8px 10px;
+    text-decoration: none;
+  }
+  
+  .govuk-oasys-list:hover {
+    display: block;
+    padding: 8px 30px 8px 10px;
+    border-left-color: #005ea5;
+    border-left: 4px solid;
+    text-decoration: none;
+  }
+  
+  .govuk-oasys-current-page {
+    border-left-color: #005ea5;
+    border-left: 4px solid;
+    background: #f8f8f8;
+    font-weight: bold;
+  }
