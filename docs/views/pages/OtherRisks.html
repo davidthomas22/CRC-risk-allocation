@@ -11,7 +11,7 @@
 
 {% block beforeContent %}
 
- <a class="govuk-back-link" href="/docs/pages/RiskToIndividual">Back</a>
+ <a class="govuk-back-link" href="/docs/pages/riskToIndividual">Back</a>
 
   {# <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
@@ -36,99 +36,100 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
-  <p class="govuk-hint">Sections</p> 
-    <ul class="govuk-list">
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Offender Details</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Previous Convictions</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Significant events</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to children</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Risk to individual</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="#">Other risks</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">sources of information</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Follow-ups</a></li>
-      <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
-    </ul>
-</div>
+    <p class="govuk-hint">Sections</p> 
+      <ul class="govuk-list">
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/offenderDetails">Offender Details</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousConvictions">Previous Convictions</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousBehaviours">Significant events</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToChildren">Risk to children</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToIndividual">Risk to individual</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="#">Other risks</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">sources of information</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Follow-ups</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
+      </ul>
+  </div>
   <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">Risk to individual</h2> 
 
-<p class="govuk-heading-l">Risk to individual</p> 
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="other-risks-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h2 class="govuk-heading-m">Do any of these other risks apply?</h2>
+        </legend>
+        <span id="other-risks-hint" class="govuk-hint">
+          Leave blank if none applies.
+        </span>
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-      <h1 class="govuk-heading-l">
-        Do any of these other risks apply?
-      </h1>
-    </legend>
-    <span id="waste-hint" class="govuk-hint">
-      Leave blank if none applies.
-    </span>
-    <div class="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-          Escape/abscond
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-          Control issues / disruptive behaviour
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Concerns in respect of breach of trust
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Risk to other prisoners 
-        </label>
-      </div>
-  </fieldset>
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
+            Escape/abscond
+          </label>
+        </div>
+
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
+            Control issues / disruptive behaviour
+          </label>
+        </div>
+
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
+            Concerns in respect of breach of trust
+          </label>
+        </div>
+
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
+            Risk to other prisoners 
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="other-risks-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <span id="other-risks-hint" class="govuk-hint">
+          Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up.  
+        </span>
+          <h2 class="govuk-heading-m">Is there anything else about the offender that leads you to think that a full analysis should be completed?</h2>
+        </legend>
+
+        <div class="govuk-radios govuk-radios--inlin" data-module="radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="other-risks-2" name="other-risks-2" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+            <label class="govuk-label govuk-radios__label" for="other-risks-2">
+              Yes
+            </label>
+        </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="other-risks-2" name="other-risks-2" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="other-risks-2">
+              No
+            </label>
+          </div>
+
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+          <div class="govuk-form-group">
+            <span id="more-detail-hint" class="govuk-hint">
+              Describe why you think the full analysis should be done?
+            </span>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+      </fieldset>
+    </div>
+  </div>
 </div>
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="other-risks-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-     <span id="other-risks-hint" class="govuk-hint">
-      Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up.  
-    </span>
-      <h1 class="govuk-heading-m">
-        Is there anything else about the offender that leads you to think that a full analysis should be completed?
-      </h1>
-    </legend>
-    <div class="govuk-radios govuk-radios--inlin" data-module="radios">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="other-risks" name="other-risks" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
-        <label class="govuk-label govuk-radios__label" for="other-risks">
-          Yes
-        </label>
-    </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="other-risks" name="other-risks" type="radio" value="no">
-        <label class="govuk-label govuk-radios__label" for="other-risks">
-          No
-        </label>
-      </div>
-    <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
-      <div class="govuk-form-group">
-        <span id="more-detail-hint" class="govuk-hint">
-          Describe why you think the full analysis should be done?
-        </span>
-          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-       </div>
-        </fieldset>
-    </div>
- 
-</div></div>
-
+<div>
   <a href="/docs/pages/" role="button" role="button" style= "position: relative; left: 550px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Next</a>
   <a href="/docs/pages/start" role="button" style= "position: relative; left: 560px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Save and Close</a>
-
-
 </div>
 {% endblock %}

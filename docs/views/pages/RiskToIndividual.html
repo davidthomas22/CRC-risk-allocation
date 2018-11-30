@@ -11,7 +11,7 @@
 
 {% block beforeContent %}
 
- <a class="govuk-back-link" href="/docs/pages/RiskToChildren">Back</a>
+ <a class="govuk-back-link" href="/docs/pages/riskToChildren">Back</a>
 
   {# <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
@@ -38,155 +38,156 @@
   <div class="govuk-grid-column-one-third">
     <p class="govuk-hint">Sections</p> 
       <ul class="govuk-list">
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousConvictions">Offender Details</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/offenderDetails">Offender Details</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousConvictions">Previous Convictions</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousConvictions">Significant events</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/RiskTo">Risk to children</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousBehaviours">Significant events</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToChildren">Risk to children</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="#">Risk to individual</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/OtherRisks">Other risks</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/otherRisks">Other risks</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/">Sources of information</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/">Follow-ups</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
       </ul>
   </div>
   <div class="govuk-grid-column-two-thirds">
-
     <p class="govuk-heading-l">Risk to individual</p> 
 
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="Risk-individual-1-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <span id="Risk-individual-hint" class="govuk-hint">
-            Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up.  
-          </span>
-            <h1 class="govuk-heading-m">
-              Is there a risk of suicide?
-            </h1>
-          </legend>
-          <div class="govuk-radios govuk-radios--inline">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-1" name="Risk-individual-1" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-1">
-                Yes
-              </label>
-            </div>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="risk-individual-1-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <span id="risk-individual-hint" class="govuk-hint">
+          Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up.  
+        </span>
+          <h1 class="govuk-heading-m">Is there a risk of suicide?</h1>
+        </legend>
 
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-1" name="Risk-individual-1" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-1">
-                No
-              </label>
-            </div>
+        <div class="govuk-radios govuk-radios--inline">
 
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-1" name="Risk-individual-1" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-1">
-                Dont Know
-              </label>
-            </div>
-          
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-1" name="risk-individual-1" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-1">
+              Yes
+            </label>
           </div>
-        </fieldset>
-      </div>
 
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="Risk-individual-2-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-            <h1 class="govuk-heading-m">
-              Is there a risk of self harm?  
-            </h1>
-          </legend>
-          
-          <div class="govuk-radios govuk-radios--inline">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-2" name="Risk-individual-2" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-2">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-2" name="Risk-individual-2" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-2">
-                No
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-2" name="Risk-individual-2" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-2">
-                Dont Know
-              </label>
-            </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-1" name="risk-individual-1" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-1">
+              No
+            </label>
           </div>
-        </fieldset>
-      </div>
 
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="Risk-individual-3-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-            <h1 class="govuk-heading-m">
-              Is there a risk that the offender might not be able to cope in a custody or hostel setting?  
-            </h1>
-          </legend>
-          
-          <div class="govuk-radios govuk-radios--inline">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-3" name="Risk-individual-3" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-3">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-3" name="Risk-individual-3" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-3">
-                No
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-3" name="Risk-individual-3" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-3">
-                Dont Know
-              </label>
-            </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-1" name="risk-individual-1" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-1">
+              Dont Know
+            </label>
           </div>
-        </fieldset>
-      </div>
+        
+        </div>
+      </fieldset>
+    </div>
 
-      <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="Risk-individual-4-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-            <h1 class="govuk-heading-m">
-              Is the offender a vunerable person?  
-            </h1>
-          </legend>
-          
-          <div class="govuk-radios govuk-radios--inline">
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-4" name="Risk-individual-4" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-4">
-                Yes
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-4" name="Risk-individual-4" type="radio" value="yes">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-4">
-                No
-              </label>
-            </div>
-            <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="Risk-individual-4" name="Risk-individual-4" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="Risk-individual-4">
-                Dont Know
-              </label>
-            </div>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="risk-individual-2-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-heading-m">Is there a risk of self harm?</h1>
+        </legend>
+        
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-2" name="risk-individual-2" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-2">
+              Yes
+            </label>
           </div>
-        </fieldset>
-      </div>
- 
-</div></div>
 
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-2" name="risk-individual-2" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-2">
+              No
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-2" name="risk-individual-2" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-2">
+              Dont Know
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="risk-individual-3-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-heading-m">Is there a risk that the offender might not be able to cope in a custody or hostel setting?</h1>
+        </legend>
+        
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-3" name="risk-individual-3" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-3">
+              Yes
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-3" name="risk-individual-3" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-3">
+              No
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-3" name="risk-individual-3" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-3">
+              Dont Know
+            </label>
+          </div>
+
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="risk-individual-4-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-heading-m">
+            Is the offender a vunerable person?  
+          </h1>
+        </legend>
+        
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-4" name="risk-individual-4" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-4">
+              Yes
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-4" name="risk-individual-4" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-4">
+              No
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="risk-individual-4" name="risk-individual-4" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="risk-individual-4">
+              Dont Know
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<div>
   <a href="/docs/pages/otherRisks" role="button" role="button" style= "position: relative; left: 550px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Next</a>
   <a href="/docs/pages/start" role="button" style= "position: relative; left: 560px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Save and Close</a>
-
-
 </div>
 {% endblock %}
