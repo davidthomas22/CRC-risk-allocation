@@ -5,7 +5,7 @@ usage-data-config.json
 .DS_Store
 .start.pid
 .port.tmp
-public
+# public
 node_modules/*
 .tmuxp.*
 package-lock.json
