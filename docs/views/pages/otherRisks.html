@@ -5,13 +5,23 @@
 {% endblock %}
 
 {% block header %}
-  <!-- Blank header with no service name for the start page -->
-  {{ govukHeader() }}
+<div class="govuk-phase-banner govuk-width-container">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  {# <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }} #}
 {% endblock %}
 
 {% block beforeContent %}
 
- <a class="govuk-back-link" href="/docs/pages/riskToIndividual">Back</a>
+ {# <a class="govuk-back-link" href="/docs/pages/riskToIndividual">Back</a> #}
 
   {# <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
@@ -29,12 +39,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-width-container">
     <div class="govuk-grid-column govuk-!-margin-top-6">
       <h1 class="govuk-heading-xl">CRC allocation risk screening</h1>  
 </div>
 
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-width-container">
   <div class="govuk-grid-column-one-third">
     <p class="govuk-hint">Sections</p> 
       <ul class="govuk-list">
@@ -44,18 +54,17 @@
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToChildren">Risk to children</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToIndividual">Risk to individual</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="#">Other risks</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">sources of information</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sources of information</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Follow-ups</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
       </ul>
   </div>
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-l">Risk to individual</h2> 
+    <h2 class="govuk-heading-l">Other risks</h2> 
 
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="other-risks-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <h2 class="govuk-heading-m">Do any of these other risks apply?</h2>
         </legend>
         <span id="other-risks-hint" class="govuk-hint">
           Leave blank if none applies.
@@ -66,13 +75,16 @@
           <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="carcasses">
           <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
             Escape/abscond
+                 <span id="other-risks-hint" class="govuk-hint">This could be in a custodial and or in a hostel setting</span>
           </label>
+         
         </div>
 
         <div class="govuk-checkboxes__item">
           <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="mines">
           <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
             Control issues / disruptive behaviour
+              <span id="other-risks-hint" class="govuk-hint">This could be within a custodial, hostel, group work or community setting</span>
           </label>
         </div>
 
@@ -80,6 +92,7 @@
           <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="farm">
           <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
             Concerns in respect of breach of trust
+              <span id="other-risks-hint" class="govuk-hint">This applies to situations where the offender might be able to abuse a position of trust (e.g. bringing illicit items into prison or hostel on return from outside)</span>
           </label>
         </div>
 
@@ -87,6 +100,7 @@
           <input class="govuk-checkboxes__input" id="other-risks-1" name="other-risks-1" type="checkbox" value="farm">
           <label class="govuk-label govuk-checkboxes__label" for="other-risks-1">
             Risk to other prisoners 
+              <span id="other-risks-hint" class="govuk-hint">This could be potential violence, bullying, exploitation, intimidation, etc.</span>
           </label>
         </div>
       </fieldset>
@@ -95,9 +109,6 @@
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="other-risks-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-        <span id="other-risks-hint" class="govuk-hint">
-          Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up.  
-        </span>
           <h2 class="govuk-heading-m">Is there anything else about the offender that leads you to think that a full analysis should be completed?</h2>
         </legend>
 
@@ -128,8 +139,8 @@
   </div>
 </div>
 
-<div>
-  <a href="/docs/pages/" role="button" role="button" style= "position: relative; left: 550px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Next</a>
-  <a href="/docs/pages/start" role="button" style= "position: relative; left: 560px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Save and Close</a>
+<div class="govuk-grid-row govuk-width-container">
+  <a href="/docs/pages/start" role="button" class="govuk-oasys-cancel-button">Save and Close</a>
+  <a href="/docs/pages/" role="button" role="button" class="govuk-oasys-next-button">Next</a> 
 </div>
 {% endblock %}

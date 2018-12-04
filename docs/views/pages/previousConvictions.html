@@ -5,13 +5,23 @@
 {% endblock %}
 
 {% block header %}
+<div class="govuk-phase-banner govuk-width-container">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
   <!-- Blank header with no service name for the start page -->
-  {{ govukHeader() }}
+  {# {{ govukHeader() }} #}
 {% endblock %}
 
 {% block beforeContent %}
 
- <a class="govuk-back-link" href="/docs/pages/offenderDetails">Back</a>
+ {# <a class="govuk-back-link" href="/docs/pages/offenderDetails">Back</a> #}
 
   {# <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
@@ -29,12 +39,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-width-container">
     <div class="govuk-grid-column govuk-!-margin-top-6">
       <h1 class="govuk-heading-xl">CRC allocation risk screening</h1>  
 </div>
 
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-width-container">
   <div class="govuk-grid-column-one-third">
     <p class="govuk-hint">Sections</p> 
       <ul class="govuk-list">
@@ -147,8 +157,8 @@
   </div>
 </div>
 
-<div>
-  <a href="/docs/pages/previousBehaviours" role="button" style= "position: relative; left: 550px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Next</a>
-  <a href="/docs/pages/start" role="button" style= "position: relative; left: 560px;" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Save and Close</a>
+<div class="govuk-grid-row govuk-width-container">
+  <a href="/docs/pages/start" role="button" class="govuk-oasys-cancel-button">Save and Close</a>
+  <a href="/docs/pages/previousBehaviours" role="button" class="govuk-oasys-next-button">Next</a>
 </div>
 {% endblock %}
