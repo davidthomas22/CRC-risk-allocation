@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Follow Ups
+{% endblock %}
+
+{% block header %}
+<div class="govuk-phase-banner govuk-width-container">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  {# <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }} #}
+{% endblock %}
+
+{% block beforeContent %}
+
+ {# <a class="govuk-back-link" href="/docs/pages/riskToIndividual">Back</a> #}
+
+  {# <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> #}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row govuk-width-container">
+    <div class="govuk-grid-column govuk-!-margin-top-6">
+      <h1 class="govuk-heading-xl">Follow ups</h1>  
+</div>
+
+<div class="govuk-grid-row govuk-width-container">
+  <div style="position: sticky; top:0" class="govuk-grid-column-one-third">
+    <p class="govuk-hint">Sections</p> 
+      <ul class="govuk-list">
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/offenderDetails">Offender Details</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousConvictions">Previous Convictions</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousBehaviours">Significant events</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToChildren">Risk to children</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToIndividual">Risk to individual</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/otherRisks">Other risks</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/sourcesOfInformation">Sources of information</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="">Follow-ups</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/signAndSubmit">Sign and submit</a></li>
+      </ul>
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="follow-up-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h2 class="govuk-heading-m">Were you able to access all the information you needed to complete this screening?</h2>
+        </legend>
+
+        <div class="govuk-radios govuk-radios--inlin" data-module="radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-1" name="follow-up-1" type="radio" value="email">
+            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+              Yes
+            </label>
+        </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-1" name="follow-up-1" type="radio" value="no" data-aria-controls="conditional-how-contacted-conditional-1">
+            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+              No
+            </label>
+          </div>
+
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+          <div class="govuk-form-group">
+            <span id="more-detail-hint" class="govuk-hint">
+              Describe which information was missing at the time of this screening?
+            </span>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="follow-up-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h2 class="govuk-heading-m">Do you advise a view of this screening by the next case manager?</h2>
+        </legend>
+
+        <div class="govuk-radios govuk-radios--inlin" data-module="radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-2" name="follow-up-2" type="radio" value="email">
+            <label class="govuk-label govuk-radios__label" for="follow-up-2">
+              Yes
+            </label>
+        </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-2" name="follow-up-2" type="radio" value="no" data-aria-controls="conditional-how-contacted-conditional-2">
+            <label class="govuk-label govuk-radios__label" for="follow-up-2">
+              No
+            </label>
+          </div>
+
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+          <div class="govuk-form-group">
+            <span id="more-detail-hint" class="govuk-hint">
+              Describe why you think this is needed?
+            </span>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-width-container">
+  <a href="/docs/pages/start" role="button" class="govuk-oasys-cancel-button">Save and Close</a>
+  <a href="/docs/pages/signAndSubmit" role="button" role="button" class="govuk-oasys-next-button">Next</a> 
+</div>
+{% endblock %}
