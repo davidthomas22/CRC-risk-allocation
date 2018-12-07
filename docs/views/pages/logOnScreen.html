@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  CRC allocation risk screening
+{% endblock %}
+
+{% block header %}
+ {# {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: "CRC allocation risk screening",
+    serviceUrl: "#",
+    containerClasses: "govuk-width-container"
+  }) }} #}
+  <div class="govuk-phase-banner govuk-width-container">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  <!-- Blank header with no service name for the start page -->
+  {# {{ govukHeader() }} #}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {# <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> #}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column govuk-!-margin-top-6"> 
+
+    <a href="/docs/pages/assessmentScreen">
+      <img src="/public/images/screen1.png" alt="OASys log on screen" width="100%">
+    </a>
+
+  {# <h1 class="govuk-heading-m">Create New Assessment </h1>
+      <p>This is a new process for court staff to quickly assess Risk of Serious Harm for offenders to be allocated to CRCs.</p>
+        <a href="/docs/pages/offenderDetails" target= "_blank" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a> #}
+  </div>
+</div>
+
+  
+
+{% endblock %}
