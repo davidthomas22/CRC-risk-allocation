@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Previous Convictions
+  Sources of Information
 {% endblock %}
 
 {% block header %}
@@ -40,11 +40,22 @@
 
 {% block content %}
 <div class="govuk-grid-row govuk-width-container">
-    <div class="govuk-grid-column govuk-!-margin-top-6">
+    <div class="govuk-grid-column-one-half govuk-!-margin-top-6">
       <h1 class="govuk-heading-xl">Sources of Information</h1>  
+    </div>
+
+    <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
+      <span class="govuk-body">Offender name</span> 
+      <span class="govuk-heading-s">Joe Bloggs</span> 
+    </div>
+
+    <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
+      <span class="govuk-body">Current Offence</span> 
+      <span class="govuk-heading-s">Aiding and abetting</span> 
+    </div>
 </div>
 
-<div class="govuk-grid-row govuk-width-container">
+<div class="govuk-grid-row govuk-width-container govuk-!-margin-top-6">
   <div style="position: sticky; top:0" class="govuk-grid-column-one-third">
     <p class="govuk-hint">Sections</p> 
       <ul class="govuk-list">
@@ -56,7 +67,8 @@
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/otherRisks">Other risks</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="">Sources of information</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/followUp">Follow-ups</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="#">Sign and submit</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/review">Review</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/finalise">Finalise</a></li>
       </ul>
   </div>
 
@@ -101,14 +113,14 @@
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="sources-of-information" name="sources-of-information" type="checkbox" value="farm">
             <label class="govuk-label govuk-checkboxes__label" for="sources-of-information">
-              BCS
+              Basic custody screening
             </label>
           </div>
 
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="sources-of-information" name="sources-of-information" type="checkbox" value="farm">
             <label class="govuk-label govuk-checkboxes__label" for="sources-of-information">
-              Prosecutor (Including CPS)
+              Prosecutor (Including Crown prosecution service)
             </label>
           </div>
 
@@ -122,7 +134,7 @@
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="sources-of-information" name="sources-of-information" type="checkbox" value="farm">
             <label class="govuk-label govuk-checkboxes__label" for="sources-of-information">
-              RFI
+              Request for information
             </label>
           </div>
 
@@ -220,7 +232,7 @@
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="sources-of-information" name="sources-of-information" type="checkbox" value="farm">
             <label class="govuk-label govuk-checkboxes__label" for="sources-of-information">
-              OASys SAQ
+              OASys self assessment questionnaire
             </label>
           </div>
 

@@ -1,0 +1,165 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Finalise
+{% endblock %}
+
+{% block header %}
+<div class="govuk-phase-banner govuk-width-container">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  {# <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }} #}
+{% endblock %}
+
+{% block beforeContent %}
+
+ {# <a class="govuk-back-link" href="/docs/pages/riskToIndividual">Back</a> #}
+
+  {# <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> #}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row govuk-width-container">
+    <div class="govuk-grid-column-one-half govuk-!-margin-top-6">
+      <h1 class="govuk-heading-xl">Continue in OASys</h1>  
+    </div>
+
+    <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
+      <span class="govuk-body">Offender name</span> 
+      <span class="govuk-heading-s">Joe Bloggs</span> 
+    </div>
+
+    <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
+      <span class="govuk-body">Current Offence</span> 
+      <span class="govuk-heading-s">Aiding and abetting</span> 
+    </div>
+</div>
+
+<div class="govuk-grid-row govuk-width-container govuk-!-margin-top-6">
+  <div style="position: sticky; top:0" class="govuk-grid-column-one-third">
+    <p class="govuk-hint">Sections</p> 
+      <ul class="govuk-list">
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/offenderDetails">Offender Details</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousConvictions">Previous Convictions</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/previousBehaviours">Significant events</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToChildren">Risk to children</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/riskToIndividual">Risk to individual</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/otherRisks">Other risks</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/sourcesOfInformation">Sources of information</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/followUp">Follow-ups</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/review">Review</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="">Finalise</a></li>
+      </ul>
+  </div>
+
+  <div style="background-color: lightBlue; margin-bottom: 50px" class="govuk-grid-column-two-thirds">
+    <div style="margin-top: 30px" class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        You have identifed the below risks that require further analysis.
+      </strong>
+    </div>
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">Significant events</th>
+            <td class="govuk-table__cell">Been a stalker</td>
+            <td class="govuk-table__cell">Required:<br>Section R6 of full analysis</br></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">Risk to the individual</th>
+            <td class="govuk-table__cell">Risk of suicide</td>
+            <td class="govuk-table__cell">Required:<br> Section R8 of full analysis</br></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="follow-up-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h2 class="govuk-heading-m">Is there anything else about the offender that leads you to think that a full analysis should be completed?</h2>
+        </legend>
+
+        <div class="govuk-radios govuk-radios--inline" data-module="radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-1" name="finalise-1" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+              Yes
+            </label>
+        </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-1" name="finalise-1" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+              No
+            </label>
+          </div>
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="follow-up-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h2 class="govuk-heading-m">Are there any reasons why you think a full analysis isn't required?</h2>
+        </legend>
+
+        <div class="govuk-radios govuk-radios--inline" data-module="radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-1" name="follow-up-1" type="radio" value="email">
+            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+              Yes
+            </label>
+          </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="follow-up-1" name="follow-up-1" type="radio" value="no" data-aria-controls="conditional-how-contacted-conditional-1">
+            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+              No
+            </label>
+          </div>
+
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden u-clear-both" id="conditional-how-contacted-conditional-1">
+            <div class="govuk-form-group">
+              <span id="more-detail-hint" class="govuk-hint">
+                Go to OASys to complete the required sections of the full analysis. You will only be shown the sections you need to complete. The RoSH content you entered here has already been pulled through.
+              </span>
+                {# <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea> #}
+            </div>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-width-container">
+  <a href="/docs/pages/start" role="button" class="govuk-oasys-cancel-button">Save and Close</a>
+  <a href="/docs/pages/riskOfSeriousHarm5" role="button" role="button" class="govuk-oasys-next-button">Submit</a> 
+</div>
+{% endblock %}

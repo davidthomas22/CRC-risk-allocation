@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  CRC allocation risk screening
+  RoSH screening
 {% endblock %}
 
 {% block header %}
@@ -12,14 +12,14 @@
     containerClasses: "govuk-width-container"
   }) }} #}
   <div class="govuk-phase-banner govuk-width-container">
-  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  {# <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   beta
 </strong>
     <span class="govuk-phase-banner__text">
       This is a new service – your
       <a class="govuk-link" href="#">feedback</a> will help us to improve it.
     </span>
-  </p>
+  </p> #}
 </div>
   <!-- Blank header with no service name for the start page -->
   {# {{ govukHeader() }} #}
@@ -43,12 +43,27 @@
 {% endblock %}
 
 {% block content %}
-
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6"> 
-  <h1 class="govuk-heading-xl">CRC allocation risk screening </h1>
+  <div class="govuk-grid-column govuk-!-margin-top-6"> 
+
+    <a href="">
+      <img src="/public/images/title.png" alt="OASys log on screen" width="100%">
+    </a>
+
+  {# <h1 class="govuk-heading-m">Create New Assessment </h1>
       <p>This is a new process for court staff to quickly assess Risk of Serious Harm for offenders to be allocated to CRCs.</p>
-        <a href="/docs/pages/offenderDetails" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a>
+        <a href="/docs/pages/offenderDetails" target= "_blank" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a> #}
+  </div>
+</div>
+
+<div style="background-color: #005ea5" class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6"> 
+   
+  <h1 class="govuk-heading-oasys-xl">CRC allocation risk screening</h1>
+      <p class="govuk-body-oasys-p">This service: is a new process for court staff to quickly assess Risk of Serious Harm for offenders to be allocated to CRCs.</p>
+      <p class="govuk-body-oasys-p">There are previous risk assessments for this offender. You will be able to clone and edit the most recent one, or start a new one.</p>
+      
+        <a href="/docs/pages/offenderDetails" target="_new" role="button" class="govuk-oasys-start-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a>
   </div>
 </div>
 
