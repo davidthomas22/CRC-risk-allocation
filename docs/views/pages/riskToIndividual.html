@@ -44,14 +44,14 @@
       <h1 class="govuk-heading-xl">RoSH screening</h1>  
     </div>
 
-    <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Offender name</span> 
-      <span class="govuk-heading-s">Joe Bloggs</span> 
+   <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
+      <span class="govuk-body govuk-!-font-size-16">Offender name</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Joe Bloggs</span> 
     </div>
 
     <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Current Offence</span> 
-      <span class="govuk-heading-s">Aiding and abetting</span> 
+      <span class="govuk-body govuk-!-font-size-16">Current Offence</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Aiding and abetting</span> 
     </div>
 </div>
 
@@ -67,7 +67,7 @@
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/otherRisks">Other risks</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/sourcesOfInformation">Sources of information</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/followUp">Follow-ups</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/review">Review</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/check">Check</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/finalise">Finalise</a></li>
       </ul>
   </div>
@@ -78,8 +78,8 @@
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="suicide-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-        <span id="suicide-hint" class="govuk-hint"> Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up. </span>
-          <h1 class="govuk-heading-m">Is there a risk of suicide?</h1>
+        {# <span id="suicide-hint" class="govuk-hint"> Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up. </span> #}
+          <h1 class="govuk-heading-m">Have there been or are there currently any concerns about risk of suicide?</h1>
         </legend>
 
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
@@ -110,7 +110,7 @@
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="self-harm-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <h1 class="govuk-heading-m">Is there a risk of self harm?</h1>
+          <h1 class="govuk-heading-m">Have there been or are there currently any concerns about risk of self harm?</h1>
         </legend>
         
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
@@ -141,7 +141,7 @@
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="cope-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <h1 class="govuk-heading-m">Is there a risk that the offender might not be able to cope in a custody or hostel setting?</h1>
+          <h1 class="govuk-heading-m">Have there been or are there currently any concerns about coping in a custody / hostel setting?</h1>
         </legend>
         
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
@@ -171,11 +171,7 @@
 
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="vulnerable-hint">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <h1 class="govuk-heading-m">
-            Is the offender a vulnerable person?  
-          </h1>
-        </legend>
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl"> <h1 class="govuk-heading-m"> Have there been or are there currently any concerns about vulnerability? </h1> </legend>
         
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
           <div class="govuk-radios__item">

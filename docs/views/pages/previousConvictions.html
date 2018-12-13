@@ -46,13 +46,13 @@
     </div>
 
     <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Offender name</span> 
-      <span class="govuk-heading-s">Joe Bloggs</span> 
+      <span class="govuk-body govuk-!-font-size-16">Offender name</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Joe Bloggs</span> 
     </div>
 
     <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Current Offence</span> 
-      <span class="govuk-heading-s">Aiding and abetting</span> 
+      <span class="govuk-body govuk-!-font-size-16">Current Offence</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Aiding and abetting</span> 
     </div>
 </div>
 
@@ -68,7 +68,7 @@
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/otherRisks">Other risks</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/sourcesOfInformation">Sources of information</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/followUp">Follow-ups</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/review">Review</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/check">Check</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/finalise">Finalise</a></li>
       </ul>
   </div>
@@ -78,15 +78,23 @@
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="previous-convictions-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <h2 class="govuk-heading-m">Has the offender ever been convicted of the following offences?</h2>
+          <h2 class="govuk-heading-m">Has the offender ever been convicted of the following?</h2>
         </legend>
-        <span id="previous-convictions-hint" class="govuk-hint">Select all that apply, or leave blank and go to the next if none applies.</span>
+        <span id="previous-convictions-hint" class="govuk-hint">Select all that apply</span>
 
         <div class="govuk-checkboxes">
+
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="murder" name="murder" type="checkbox" value="murder">
-            <label class="govuk-label govuk-checkboxes__label" for="murder">
-              Murder/ attempted murder / threat or conspiracy to murder /manslaughter
+            <input class="govuk-checkboxes__input" id="weapons" name="weapons" type="checkbox" value="weapons">
+            <label class="govuk-label govuk-checkboxes__label" for="weapons">
+              Any offence involving possession and/or use of weapons
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="robbery" name="robbery" type="checkbox" value="robbery">
+            <label class="govuk-label govuk-checkboxes__label" for="robbery">
+              Robbery
             </label>
           </div>
 
@@ -98,78 +106,85 @@
           </div>
 
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
+            <input class="govuk-checkboxes__input" id="racially" name="racially" type="checkbox" value="racially">
+            <label class="govuk-label govuk-checkboxes__label" for="racially">
+              Racially motivated / Racially aggravated offence
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="child-sexual-offence" name="child-sexual-offence" type="checkbox" value="child-sexual-offence">
+            <label class="govuk-label govuk-checkboxes__label" for="child-sexual-offence">
               Any sexual offence against a child
             </label>
           </div>
 
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
+            <input class="govuk-checkboxes__input" id="child-other-offence" name="child-other-offence" type="checkbox" value="child-other-offence">
+            <label class="govuk-label govuk-checkboxes__label" for="child-other-offence">
+              Any other offence agaisnt a child
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="adult-sexual-offence" name="adult-sexual-offence" type="checkbox" value="adult-sexual-offence">
+            <label class="govuk-label govuk-checkboxes__label" for="adult-sexual-offence">
+              Rape or serious sexual offence against an adult
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="arson" name="arson" type="checkbox" value="arson">
+            <label class="govuk-label govuk-checkboxes__label" for="arson">
+              Arson
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="murder" name="murder" type="checkbox" value="murder">
+            <label class="govuk-label govuk-checkboxes__label" for="murder">
+              Murder/ attempted murder / threat or conspiracy to murder /manslaughter
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="murder" name="previous-convictions" type="checkbox" value="farm">
             <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
               Aggravated burglary
             </label>
           </div>
 
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
-              Arson
-            </label>
-          </div>
-
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
-              Criminal damage with the intent to endanger life
-            </label>
-          </div>
-
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
+            <input class="govuk-checkboxes__input" id="kidnapping" name="kidnapping" type="checkbox" value="kidnapping">
+            <label class="govuk-label govuk-checkboxes__label" for="kidnapping">
               kidnapping / false imprisonment
             </label>
           </div>
 
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
+            <input class="govuk-checkboxes__input" id="firearm" name="firearm" type="checkbox" value="firearm">
+            <label class="govuk-label govuk-checkboxes__label" for="firearm">
               Possession of a firearm with intent to endanger life or resist arrest
             </label>
           </div>
 
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
-              Racially motivated / Racially aggravated offence
+            <input class="govuk-checkboxes__input" id="endanger-life" name="endanger-life" type="checkbox" value="endanger-life">
+            <label class="govuk-label govuk-checkboxes__label" for="endanger-life">
+              Criminal damage with the intent to endanger life
             </label>
           </div>
 
           <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
-              Robbery
-            </label>
-          </div>
-
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
-              Any offence involving possession and/or use of weapons
-            </label>
-          </div>
-
-          <div class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label class="govuk-label govuk-checkboxes__label" for="previous-convictions">
+            <input class="govuk-checkboxes__input" id="full-analysis" name="full-analysis" type="checkbox" value="full-analysis">
+            <label class="govuk-label govuk-checkboxes__label" for="full-analysis">
               Any other offence which would require a full analysis
             </label>
           </div>
 
           <div style="margin-top: 50px; margin-bottom: 50px" class="govuk-checkboxes__item">
-            <input class="govuk-checkboxes__input" id="previous-convictions" name="previous-convictions" type="checkbox" value="farm">
-            <label style="background-color: lightGrey; margin-left: 20px" class="govuk-label govuk-checkboxes__label" for="previous-convictions">
+            <input class="govuk-checkboxes__input" id="none-apply" name="none-apply" type="checkbox" value="none-apply">
+            <label style="background-color: lightGrey; margin-left: 20px" class="govuk-label govuk-checkboxes__label" for="none-apply">
               None of the above apply
             </label>
       </fieldset>

@@ -44,14 +44,14 @@
       <h1 class="govuk-heading-xl">Continue in OASys</h1>  
     </div>
 
-    <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Offender name</span> 
-      <span class="govuk-heading-s">Joe Bloggs</span> 
+ <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
+      <span class="govuk-body govuk-!-font-size-16">Offender name</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Joe Bloggs</span> 
     </div>
 
     <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Current Offence</span> 
-      <span class="govuk-heading-s">Aiding and abetting</span> 
+      <span class="govuk-body govuk-!-font-size-16">Current Offence</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Aiding and abetting</span> 
     </div>
 </div>
 
@@ -67,7 +67,7 @@
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/otherRisks">Other risks</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/sourcesOfInformation">Sources of information</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/followUp">Follow-ups</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/review">Review</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/check">Check</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="">Finalise</a></li>
       </ul>
   </div>
@@ -77,7 +77,7 @@
       <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
       <strong class="govuk-warning-text__text">
         <span class="govuk-warning-text__assistive">Warning</span>
-        You have identifed the below risks that require further analysis.
+        You have identifed the below risks that require further analysis
       </strong>
     </div>
       <table class="govuk-table">
@@ -99,22 +99,22 @@
   <div class="govuk-grid-column-two-thirds">
 
     <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset" aria-describedby="follow-up-hint">
+      <fieldset class="govuk-fieldset" aria-describedby="full-analysis-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h2 class="govuk-heading-m">Is there anything else about the offender that leads you to think that a full analysis should be completed?</h2>
         </legend>
 
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="follow-up-1" name="finalise-1" type="radio" value="yes">
-            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+            <input class="govuk-radios__input" id="full-analysis-yes" name="full-analysis" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="full-analysis-yes">
               Yes
             </label>
         </div>
 
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="follow-up-1" name="finalise-1" type="radio" value="no">
-            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+            <input class="govuk-radios__input" id="full-analysis-no" name="full-analysis" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="full-analysis-no">
               No
             </label>
           </div>
@@ -122,27 +122,27 @@
     </div>
 
     <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset" aria-describedby="follow-up-hint">
+      <fieldset class="govuk-fieldset" aria-describedby="risk-of-harm-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <h2 class="govuk-heading-m">Are there any reasons why you think a full analysis isn't required?</h2>
+          <h2 class="govuk-heading-m">In your professional opinion, do you consider it appropriate to not undertake a full risk of harm analysis?</h2>
         </legend>
 
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="follow-up-1" name="follow-up-1" type="radio" value="email">
-            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+            <input class="govuk-radios__input" id="risk-of-harm-yes" name="risk-of-harm" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="risk-of-harm-yes">
               Yes
             </label>
           </div>
 
           <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="follow-up-1" name="follow-up-1" type="radio" value="no" data-aria-controls="conditional-how-contacted-conditional-1">
-            <label class="govuk-label govuk-radios__label" for="follow-up-1">
+            <input class="govuk-radios__input" id="risk-of-harm-no" name="risk-of-harm" type="radio" value="no" data-aria-controls="conditional-risk-of-harm">
+            <label class="govuk-label govuk-radios__label" for="risk-of-harm-no">
               No
             </label>
           </div>
 
-          <div class="govuk-radios__conditional govuk-radios__conditional--hidden u-clear-both" id="conditional-how-contacted-conditional-1">
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden u-clear-both" id="conditional-risk-of-harm">
             <div class="govuk-form-group">
               <span id="more-detail-hint" class="govuk-hint">
                 Go to OASys to complete the required sections of the full analysis. You will only be shown the sections you need to complete. The RoSH content you entered here has already been pulled through.

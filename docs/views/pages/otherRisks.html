@@ -45,13 +45,13 @@
     </div>
 
     <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Offender name</span> 
-      <span class="govuk-heading-s">Joe Bloggs</span> 
+      <span class="govuk-body govuk-!-font-size-16">Offender name</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Joe Bloggs</span> 
     </div>
 
     <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-inset-text-oasys">
-      <span class="govuk-body">Current Offence</span> 
-      <span class="govuk-heading-s">Aiding and abetting</span> 
+      <span class="govuk-body govuk-!-font-size-16">Current Offence</span> 
+      <span class="govuk-heading-s govuk-!-font-size-16">Aiding and abetting</span> 
     </div>
 </div>
 
@@ -67,7 +67,7 @@
         <li><a class="govuk-link--no-visited-state govuk-oasys-list govuk-oasys-current-page" href="#">Other risks</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/sourcesOfInformation">Sources of information</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/followUps">Follow-ups</a></li>
-        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/review">Review</a></li>
+        <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/check">Check</a></li>
         <li><a class="govuk-link--no-visited-state govuk-oasys-list" href="/docs/pages/finalise">Finalise</a></li>
       </ul>
   </div>
@@ -78,9 +78,9 @@
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="escape-dont-know-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-          <span id="risk-individual-hint" class="govuk-hint"> Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up. </span>
+           {# <span id="risk-individual-hint" class="govuk-hint"> Only select 'yes' or 'no' if you know the answer. If you dont know the answer, select 'dont know', and the question will be flagged to the next case manager for follow up. </span> #}
           <h1 class="govuk-heading-m">Escape/abscond</h1>
-          <span id="risk-individual-hint" class="govuk-hint"> This could be in a custodial and or in a hostel setting </span>
+          <span style="color: black" id="risk-individual-hint" class="govuk-hint"> This could be in a custodial and or in a hostel setting </span>
         </legend>
 
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
@@ -110,7 +110,7 @@
       <fieldset class="govuk-fieldset" aria-describedby="behaviour-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-heading-m">Control issues / disruptive behaviour</h1>
-           <span id="behaviour-hint" class="govuk-hint"> This could be within a custodial, hostel, group work or community setting </span>
+           <span style="color: black" id="behaviour-hint" class="govuk-hint"> This could be within a custodial, hostel, group work or community setting </span>
         </legend>
         
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
@@ -142,8 +142,8 @@
       <fieldset class="govuk-fieldset" aria-describedby="risk-individual-3-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-heading-m">Concerns in respect of breach of trust</h1>
-             <span id="risk-individual-hint" class="govuk-hint">
-              This applies to situations where the offender might be able to abuse a position of trust (e.g. bringing illicit items into prison or hostel on return from outside)
+             <span style="color: black" id="risk-individual-hint" class="govuk-hint">
+              Situations where the offender might be able to abuse a position of trust (e.g. bringing illicit items into hostel on return from outside)
               </span>
         </legend>
         
@@ -176,7 +176,7 @@
       <fieldset class="govuk-fieldset" aria-describedby="risk-to-others-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
           <h1 class="govuk-heading-m"> Risk to other prisoners </h1>
-             <span id="risk-individual-hint" class="govuk-hint">This could be potential violence, bullying, exploitation, intimidation, etc.</span>
+             <span style="color: black" id="risk-individual-hint" class="govuk-hint">This could be potential violence, bullying, exploitation, intimidation, etc</span>
         </legend>
         
         <div class="govuk-radios govuk-radios--inline" data-module="radios">
